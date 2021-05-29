@@ -1,5 +1,6 @@
 package sprcom.demo;
 
+import org.springframework.cglib.core.DebuggingClassWriter;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,7 +25,7 @@ public class MyController {
       return (temperature - 32) * (5.0 / 9.0);
     else
       return (temperature * (9.0 / 5.0)) + 32;
-
-  }
+  
+    }
 
 }
