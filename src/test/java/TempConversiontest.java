@@ -10,7 +10,7 @@ public class TempConversiontest {
 
         MyController underTest = new MyController();
         double temperature = 21.0;
-        String unit = "";
+        String unit = "F";
         double result = underTest.tempConversion(temperature, unit);
         assertEquals(68.0, result, "Test result failed");
 
